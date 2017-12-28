@@ -7,17 +7,22 @@ import java.io.Serializable;
 public class Student extends Osoba implements Serializable {
 
     public String getNumeralbumu() {
-        return numeralbumu;
+        return numerAlbumu;
     }
 
-    String numeralbumu;
+    String numerAlbumu;
 
 	private static final long serialVersionUID = 1L;
 
 	public Student(){
         System.out.println("podaj numer indeksu");
-        numeralbumu= Main.c.next();
+        numerAlbumu= Main.c.next();
 
+    }
+
+    public Student(String imie, String nazwisko ,int wiek, String pesel, String numerAlbumu){
+	    super(imie,nazwisko,wiek,pesel);
+	    this.numerAlbumu=numerAlbumu;
 
     }
 

@@ -11,15 +11,17 @@ import osoby.PracownikNaukowoDydaktyczny;
 import osoby.PracownikUczelni;
 import osoby.Student;
 import pakietStartowy.Main;
+import zadania.GeneratorOsob;
 
 public class Uczelnia {
 
 	 PracownikUczelni pracownik[];
-     Student student[];
+    public static Student[] student;
 	
 	public Uczelnia() {
 
 		pracownik = new PracownikUczelni[0];
+		student = new Student[0];
 		
 	}
 	
@@ -365,5 +367,12 @@ public class Uczelnia {
         arrHolder = null;                               // wyzerowanie tablicy pomocniczej
 
     }
-	
+
+
+    public void generujStudenta(){
+        GeneratorOsob.generujStudenta();
+
+
+    }
+
 }

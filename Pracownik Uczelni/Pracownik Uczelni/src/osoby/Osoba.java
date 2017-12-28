@@ -49,7 +49,7 @@ public abstract class Osoba implements Serializable {
 		wiek=Main.c.nextInt();
 
         boolean czyPoprawne=false;
-        while (czyPoprawne == false){
+
 
 		    System.out.print("Pesel: ");
             while(pesel.length() != 11) {
@@ -59,8 +59,16 @@ public abstract class Osoba implements Serializable {
              }
 
         }
-		
-	}
+
+
+    public Osoba(String imie, String nazwisko,int wiek, String pesel){
+	    this.imie=imie;
+	    this.nazwisko=nazwisko;
+	    this.pesel=pesel;
+	    this.wiek=wiek;
+
+    }
+
 	
 	public String toString() { return "Imie: " + imie + "\tNazwisko: " + nazwisko + "\tWiek: " + wiek + "\tPesel: " + pesel; }
 	
