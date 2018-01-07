@@ -2,7 +2,9 @@ package osoby;
 
 import zadania.Konsultacje;
 
-public class PracownikNaukowoDydaktyczny extends PracownikUczelni {
+import java.io.Serializable;
+
+public class PracownikNaukowoDydaktyczny extends PracownikUczelni implements Serializable {
 
 	/**
 	 * 

@@ -3,7 +3,9 @@ package osoby;
 import osoby.Osoba;
 import pakietStartowy.Main;
 
-public abstract class PracownikUczelni extends Osoba {
+import java.io.Serializable;
+
+public abstract class PracownikUczelni extends Osoba implements Serializable {
 
 	/**
 	 * 
