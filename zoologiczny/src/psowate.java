@@ -1,8 +1,29 @@
-package PACKAGE_NAME;
+import java.io.Serializable;
 
-public class psowate {
+public class Psowate extends Zwierzeta implements Domowe, Serializable {
+    public String getRasa() {
+        return rasa;
+    }
 
+    public void setRasa(String rasa) {
+        this.rasa = rasa;
+    }
 
+    String rasa;
 
+    @Override
+    public void poglaskaj() {
+        System.out.println("piesek został pogłaskany");
+    }
 
+    @Override
+    public void zaadoptuj() {
+
+    }
+
+    public Psowate() {
+
+        System.out.println("podaj rase:");
+        rasa = Main.c.nextLine();
+    }
 }

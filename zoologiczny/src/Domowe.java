@@ -1,6 +1,6 @@
-package PACKAGE_NAME;
 
-public interface Domowe {
+
+public interface Domowe  {
     boolean czyDoAdopcji = false;
     boolean czyTresowane = false;
 

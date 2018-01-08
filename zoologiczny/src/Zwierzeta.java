@@ -1,40 +1,46 @@
-package PACKAGE_NAME;
 
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Zwierzeta {
+public abstract class Zwierzeta implements Serializable {
     String rodzaj;
     String gatunek;
-    String rasa;
+    Szczepionka szczepionka;
     String imie;
     int wiek;
     boolean czySzczepione;
     boolean czyNakarmione = false;
-    ArrayList<Zwierzeta>
+
     public Zwierzeta(){
-        rodzaj=" ";
-        gatunek=" ";
-        rasa=" ";
-        imie=" ";
-        wiek=0;
-        czySzczepione=false;
+        System.out.println("podaj rodzaj zwierzecia:");
+        rodzaj=Main.c.next();
+        System.out.println("podaj gatunek: ");
+        gatunek=Main.c.next();
+
+        System.out.println("Podaj imie:");
+        imie = Main.c.next();
+        System.out.println("Podaj wiek:");
+        wiek = Main.c.nextInt();
+        System.out.println("Czy szczepiony?:");
+        String wybor=Main.c.next();
+        if(wybor.equals("tak")) {
+            setCzySzczepione(true);
+            new Szczepionka();
+        }
+            else setCzySzczepione(false);
+
     }
 
     public Zwierzeta(String rodzaj, String gatunek, String rasa, String imie, int wiek, boolean czySzczepione){
         this.rodzaj=rodzaj;
         this.gatunek=gatunek;
-        this.rasa=rasa;
+
         this.imie=imie;
         this.wiek=wiek;
         this.czySzczepione=czySzczepione;
     }
-    public String getRasa() {
-        return rodzaj;
-    }
 
-    public void setRasa(String rasa) {
-        this.rasa = rasa;
-    }
 
     public String getRodzaj() {
         return rodzaj;
@@ -84,17 +90,8 @@ public abstract class Zwierzeta {
         this.czyNakarmione = czyNakarmione;
     }
 
-    public void nakarm(){
-    if (isCzyNakarmione()==true)
-        System.out.println("Zwierzę jest nakarmione");
-    else{
-        setCzyNakarmione(true);
-        System.out.println("zwierzę zostało nakarmione");
-    }
-    }
 
-    public void dodajZwierze(){
 
-    }
+
 
 }
