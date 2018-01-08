@@ -1,4 +1,9 @@
 package PACKAGE_NAME;
 
-public class Domowe {
+public interface Domowe {
+    boolean czyDoAdopcji = false;
+    boolean czyTresowane = false;
+
+    void poglaskaj();
+    void zaadoptuj();
 }
