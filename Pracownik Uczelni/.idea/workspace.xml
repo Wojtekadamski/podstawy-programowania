@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/pakietStartowy/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="969">
+              <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -25,7 +25,7 @@
       <file leaf-file-name="Uczelnia.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/uczelnia/Uczelnia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="17">
               <caret line="292" column="16" lean-forward="false" selection-start-line="292" selection-start-column="16" selection-end-line="292" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/zadania/Konsultacje.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
-              <caret line="40" column="70" lean-forward="true" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+              <caret line="40" column="70" lean-forward="false" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -67,7 +67,7 @@
       <file leaf-file-name="PracownikNaukowoDydaktyczny.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikNaukowoDydaktyczny.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="68">
               <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikAdministracyjny.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="86" />
+              <caret line="4" column="86" lean-forward="false" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="Osoba.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/Osoba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
+            <state relative-caret-position="153">
               <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
               <folding />
             </state>
@@ -99,7 +99,7 @@
       <file leaf-file-name="GeneratorOsob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/zadania/GeneratorOsob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="170">
               <caret line="15" column="113" lean-forward="false" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,14 +142,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -162,58 +162,13 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="osoby" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pakietStartowy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="uczelnia" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pracownik Uczelni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pracownik Uczelni" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadania" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zoologiczny" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -352,14 +307,15 @@
       <workItem from="1515401489399" duration="1306000" />
       <workItem from="1515403061722" duration="171000" />
       <workItem from="1515442756502" duration="5792000" />
+      <workItem from="1515452494645" duration="537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14370000" />
+    <option name="totallyTimeSpent" value="14907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -430,6 +386,68 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikUczelni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikNaukowoDydaktyczny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikAdministracyjny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/Osoba.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/zadania/GeneratorOsob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="113" lean-forward="false" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/uczelnia/Uczelnia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4964">
+          <caret line="292" column="16" lean-forward="false" selection-start-line="292" selection-start-column="16" selection-end-line="292" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/pakietStartowy/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -736,7 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/zadania/GeneratorOsob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="170">
           <caret line="15" column="113" lean-forward="false" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -747,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/zadania/Konsultacje.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="40" column="70" lean-forward="true" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+          <caret line="40" column="70" lean-forward="false" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -770,7 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikNaukowoDydaktyczny.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
           <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -781,14 +799,14 @@
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/PracownikAdministracyjny.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="86" />
+          <caret line="4" column="86" lean-forward="false" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/osoby/Osoba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
+        <state relative-caret-position="153">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
           <folding />
         </state>
@@ -796,15 +814,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/pakietStartowy/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="969">
+          <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pracownik Uczelni/src/uczelnia/Uczelnia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="17">
           <caret line="292" column="16" lean-forward="false" selection-start-line="292" selection-start-column="16" selection-end-line="292" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />

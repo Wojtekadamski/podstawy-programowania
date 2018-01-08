@@ -63,7 +63,7 @@ return true;
 
     public void wyswietlZwierzaka(Zwierzeta zwierze) {
 
-        System.out.println();
+
         System.out.println(zwierze);
 
     }
@@ -72,9 +72,9 @@ return true;
 
         if(0 < zwierze.length) {
 
-            for(Zwierzeta employee : zwierze) {
+            for(int i=0; i<zwierze.length;i++) {
 
-                wyswietlZwierzaka(employee);
+                System.out.print(i + "\t\t"); wyswietlZwierzaka(zwierze[i]);
 
             }
 
@@ -122,7 +122,10 @@ return true;
 
 
     public void opcjeZwierzaka(){
-
+        int wybor;
+        wyswietlWszystkich();
+        System.out.println("którego zwierzaka opcje pokazać? ");
+        if
     }
 
 
