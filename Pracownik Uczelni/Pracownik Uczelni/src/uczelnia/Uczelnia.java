@@ -377,7 +377,7 @@ public class Uczelnia {
 
     public void wyswietlStudenta(){
 		for(int j=0;j<student.length;j++){
-
+			System.out.println(student[j]);
 		}
 	}
 

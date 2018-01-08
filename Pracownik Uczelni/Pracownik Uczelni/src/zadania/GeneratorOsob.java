@@ -8,6 +8,7 @@ import zadania.*;
 import static uczelnia.Uczelnia.student;
 
 
+
 public class GeneratorOsob extends Osoba {
     //23 imiona i nazwiska
   public static String[][] imionaINazwiska= {

@@ -14,7 +14,7 @@ public class Main {
 		
 		int wybor = 0;
 		
-		while(wybor != 10) {
+		while(wybor != 11) {
 			
 			System.out.println();
 			System.out.println("Co chcesz zrobić:\n");
@@ -81,7 +81,7 @@ public class Main {
 					break;
 
                 case 10:
-                    uczelnia.generujStudenta();
+                    uczelnia.wyswietlStudenta();
                     break;
 			
 			}
