@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Kotowate  extends Zwierzeta implements Domowe, Serializable {
+    private static final long serialVersionUID = 10L;
     String rasa;
 
     public String getRasa() {

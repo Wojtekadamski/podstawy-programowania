@@ -110,13 +110,18 @@ return true;
             ObjectInputStream objectStream = new ObjectInputStream(new FileInputStream("zwierzeta.ino"));
             zwierze = (Zwierzeta []) objectStream.readObject();
             objectStream.close();
-            System.out.println("pracownicy zaimportowani");
+            System.out.println("zwierzęta zaimportowane");
 
         } catch(FileNotFoundException fnfe) {
 
             System.out.println("Brak pliku");
 
         }catch(Exception ex) { ex.printStackTrace(); }
+
+    }
+
+
+    public void opcjeZwierzaka(){
 
     }
 

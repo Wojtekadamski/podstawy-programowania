@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Psowate extends Zwierzeta implements Domowe, Serializable {
+    private static final long serialVersionUID = 10L;
     public String getRasa() {
         return rasa;
     }
@@ -24,6 +25,6 @@ public class Psowate extends Zwierzeta implements Domowe, Serializable {
     public Psowate() {
 
         System.out.println("podaj rase:");
-        rasa = Main.c.nextLine();
+        rasa = Main.c.next();
     }
 }

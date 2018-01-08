@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Szczepionka implements Serializable {
+    private static final long serialVersionUID = 10L;
 
     String nazwa;
     String naCoDziala;

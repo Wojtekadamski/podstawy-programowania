@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public abstract class Zwierzeta implements Serializable {
+    private static final long serialVersionUID = 10L;
     String rodzaj;
     String gatunek;
     Szczepionka szczepionka;
@@ -91,7 +92,7 @@ public abstract class Zwierzeta implements Serializable {
     }
 
 
-
+public String toString() {return " rodzaj: " + getRodzaj() + "\tgatunek: " + getGatunek() + " \timie: " + getImie() + " \twiek: " + getWiek();}
 
 
 }

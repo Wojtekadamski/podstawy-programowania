@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Egzotyczne extends Zwierzeta implements Serializable {
+    private static final long serialVersionUID = 10L;
     public boolean isCzyJadowite() {
         return czyJadowite;
     }
