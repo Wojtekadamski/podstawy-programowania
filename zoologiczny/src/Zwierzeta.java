@@ -27,7 +27,7 @@ public abstract class Zwierzeta implements Serializable {
         String wybor=Main.c.next();
         if(wybor.equals("tak")) {
             setCzySzczepione(true);
-            new Szczepionka();
+            szczepionka = new Szczepionka();
         }
             else setCzySzczepione(false);
 

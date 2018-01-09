@@ -17,7 +17,7 @@ String temp;
 
     public Egzotyczne() {
 
-        System.out.println("Podaj nazwę szczepionki");
+        System.out.println("Czy jadowite?");
         temp=Main.c.next();
         if(temp.equals("tak"))
             setCzyJadowite(true);

@@ -122,10 +122,37 @@ return true;
 
 
     public void opcjeZwierzaka(){
-        int wybor;
+        int wybor=0;
+        boolean poprawne = false;
         wyswietlWszystkich();
         System.out.println("którego zwierzaka opcje pokazać? ");
-        if
+        while(poprawne != true){
+            wybor=Main.c.nextInt();
+            if (zwierze[wybor] instanceof Psowate){
+                opcjePsa();
+                poprawne = true;
+            }
+            if (zwierze[wybor] instanceof Kotowate){
+                opcjeKota();
+                poprawne = true;
+            }
+            if (zwierze[wybor] instanceof Egzotyczne) {
+                opcjeEgzotycznego();
+                poprawne = true;
+            }
+            else System.out.println("błędne dane" );
+
+        }
+    }
+
+    private void opcjeEgzotycznego() {
+
+    }
+
+    private void opcjeKota() {
+    }
+
+    private void opcjePsa() {
     }
 
 

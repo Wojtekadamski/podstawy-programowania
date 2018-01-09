@@ -15,7 +15,7 @@ public static final Scanner c = new Scanner(System.in);
                 schronisko.dodajZwierze();
                 break;
             case 2:
-                schronisko.wyswietlWszystkich();
+                schronisko.opcjeZwierzaka();
                 break;
             case 7:
                 schronisko.eksportuj();
