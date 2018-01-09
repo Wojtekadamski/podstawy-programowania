@@ -146,10 +146,11 @@ return true;
     }
 
     private void opcjeEgzotycznego() {
-
+        System.out.println("brak opcji");
     }
 
     private void opcjeKota() {
+
     }
 
     private void opcjePsa() {
