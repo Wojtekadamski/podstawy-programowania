@@ -1,0 +1,28 @@
+import java.io.Serializable;
+
+public class Egzotyczne extends Zwierzeta implements Serializable {
+    private static final long serialVersionUID = 10L;
+    public boolean isCzyJadowite() {
+        return czyJadowite;
+    }
+
+    public void setCzyJadowite(boolean czyJadowite) {
+        this.czyJadowite = czyJadowite;
+    }
+
+    boolean czyJadowite;
+
+String temp;
+
+
+    public Egzotyczne() {
+
+        System.out.println("Czy jadowite?");
+        temp=Main.c.next();
+        if(temp.equals("tak"))
+            setCzyJadowite(true);
+        else
+            setCzyJadowite(false);
+
+    }
+}

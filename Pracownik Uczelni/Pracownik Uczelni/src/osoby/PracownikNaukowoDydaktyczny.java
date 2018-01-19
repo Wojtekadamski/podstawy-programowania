@@ -1,6 +1,6 @@
 package osoby;
 
-import zadania.Konsultacje;
+import zadania.KonsultacjeProwadzacy;
 
 import java.io.Serializable;
 
@@ -11,13 +11,13 @@ public class PracownikNaukowoDydaktyczny extends PracownikUczelni implements Ser
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private Konsultacje konsultacje;
+	private KonsultacjeProwadzacy konsultacje;
 	
 	public PracownikNaukowoDydaktyczny() {
 
 
 
-		konsultacje = new Konsultacje();
+		konsultacje = new KonsultacjeProwadzacy();
 		
 	}
 	

@@ -25,6 +25,8 @@ public class interfejs {
 
             }
         });
+
+
     }
 
     private void createUIComponents() {

@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Psowate.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Psowate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Psowate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Schronisko.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Schronisko.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Schronisko.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
+            <state relative-caret-position="963">
               <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
                 <element signature="e#94#95#0" expanded="true" />
@@ -352,12 +352,12 @@
       <workItem from="1515428691076" duration="1626000" />
       <workItem from="1515439013547" duration="11088000" />
       <workItem from="1515452527275" duration="507000" />
-      <workItem from="1515455244263" duration="1203000" />
+      <workItem from="1515455244263" duration="3100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14885000" />
+    <option name="totallyTimeSpent" value="16782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -751,6 +751,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Egzotyczne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Psowate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Szczepionka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -772,19 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Egzotyczne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Zwierzeta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -798,28 +813,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Schronisko.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
+        <state relative-caret-position="963">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
             <element signature="e#94#95#0" expanded="true" />
             <element signature="e#136#137#0" expanded="true" />
             <element signature="e#3654#3655#0" expanded="true" />
             <element signature="e#3702#3703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Psowate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>

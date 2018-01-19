@@ -15,7 +15,7 @@ import zadania.GeneratorOsob;
 
 public class Uczelnia {
 
-	 PracownikUczelni pracownik[];
+	public static PracownikUczelni pracownik[];
     public static Student student[];
 	
 	public Uczelnia() {
