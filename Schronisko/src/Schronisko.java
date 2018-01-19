@@ -74,7 +74,7 @@ return true;
 
             for(int i=0; i<zwierze.length;i++) {
 
-                System.out.print(i + "\t\t"); wyswietlZwierzaka(zwierze[i]);
+                System.out.print("\t\t" + ++i + "\t\t"); i--; wyswietlZwierzaka(zwierze[i]);
 
             }
 
@@ -128,20 +128,27 @@ return true;
         System.out.println("którego zwierzaka opcje pokazać? ");
         while(poprawne != true){
             wybor=Main.c.nextInt();
-            if (zwierze[wybor] instanceof Psowate){
-                opcjePsa();
-                poprawne = true;
+            try {
+                if (zwierze[wybor-1].getRodzaj().equals("pies")) {
+                    opcjePsa();
+                    poprawne = true;
+                }
+                else {
+                    if (zwierze[wybor - 1].getRodzaj().equals("kot")) {
+                        opcjeKota();
+                        poprawne = true;
+                    }
+                    else {
+                        if (zwierze[wybor - 1] instanceof Zwierzeta) {
+                            opcjeEgzotycznego();
+                            poprawne = true;
+                        } else System.out.println("błędne dane");
+                    }
+                }
+            }catch (ArrayIndexOutOfBoundsException aioobe)
+            {
+                System.out.println("błędne dane, wpisz pomiędzy 1 a " + zwierze.length);
             }
-            if (zwierze[wybor] instanceof Kotowate){
-                opcjeKota();
-                poprawne = true;
-            }
-            if (zwierze[wybor] instanceof Egzotyczne) {
-                opcjeEgzotycznego();
-                poprawne = true;
-            }
-            else System.out.println("błędne dane" );
-
         }
     }
 
@@ -150,10 +157,11 @@ return true;
     }
 
     private void opcjeKota() {
-
+        System.out.println("opcje kota");
     }
 
     private void opcjePsa() {
+        System.out.println("opcje psa");
     }
 
 

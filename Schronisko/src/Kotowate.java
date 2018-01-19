@@ -29,6 +29,7 @@ public class Kotowate  extends Zwierzeta implements Domowe, Serializable {
 
     @Override
     public void zaadoptuj() {
+        System.out.println("zaadoptowano zwierzaka");
 
     }
     public Kotowate(){

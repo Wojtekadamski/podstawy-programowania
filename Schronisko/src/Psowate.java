@@ -19,7 +19,7 @@ public class Psowate extends Zwierzeta implements Domowe, Serializable {
 
     @Override
     public void zaadoptuj() {
-
+        System.out.println("zaadoptowano zwierzaka");
     }
 
     public Psowate() {
