@@ -1,5 +1,6 @@
 package zadania;
 
+import osoby.PracownikNaukowoDydaktyczny;
 import osoby.Student;
 import pakietStartowy.Main;
 
@@ -9,7 +10,7 @@ import java.util.StringTokenizer;
 
 
 public class KonsultacjeProwadzacy implements Serializable {
-
+    private static final long serialVersionUID = 1L;
 /** zmienne dotyczące studentów
     PracownikUczelni jakiWykladowca;
     int czasPotrzebnyMinimalny;
@@ -21,10 +22,11 @@ public class KonsultacjeProwadzacy implements Serializable {
 	String day;
 	int hour;
 	int minute;
-	static final int CZTRWANIA = 90;
-	private Student studentsSignedUp[] = new Student[0];
+
+	private Student[] studentsSignedUp = new Student[0];
 	
 	public KonsultacjeProwadzacy() {
+
 	    String godzina= "0";
 	    String minuta= "0";
         String tempKonsultacje = "";
@@ -73,17 +75,29 @@ public class KonsultacjeProwadzacy implements Serializable {
         hour = Integer.parseInt(godzina);
         minute = Integer.parseInt(minuta);
     }
-	
-	public boolean zapisNaKonsultacje(Student nowyStudent) {
 
-        if (studentsSignedUp.length <= 30) {
+	public void zapisNaKonsultacje(Student nowyStudent, PracownikNaukowoDydaktyczny prac) {
 
-            Student.dodajStudenta(nowyStudent);
-            return true;
+        if (studentsSignedUp.length <= 30 && prac.getCzasPozostaly()> nowyStudent.konsultacjeStudent.czasPotrzebnyMinimalny ) {
+            prac.setCzasPozostaly(prac.getCzasPozostaly()-nowyStudent.konsultacjeStudent.czasPotrzebnyMinimalny);
+            //Rozszeżanie tablicy pracowników za pomocą tablicy pomocniczej
+            Student arrHolder[] = new Student[studentsSignedUp.length + 1];
+
+            for(int i = 0; i < studentsSignedUp.length; i++) {
+
+                arrHolder[i] = studentsSignedUp[i];
+
+            }
+
+            arrHolder[studentsSignedUp.length] = nowyStudent;      //dopisanie nowego pracownika
+            studentsSignedUp = arrHolder;                          //"przepisanie" tablicy
+            arrHolder = null;                               // wyzerowanie tablicy pomocniczej
+
+
 
         } else {
+            System.out.println("brak miejsc");
 
-            return false;
 
         }
 
@@ -98,6 +112,7 @@ public class KonsultacjeProwadzacy implements Serializable {
         }
         return true;
     }
-	}
+
+}
 	
 

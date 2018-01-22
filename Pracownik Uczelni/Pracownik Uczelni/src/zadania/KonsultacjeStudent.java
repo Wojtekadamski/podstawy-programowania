@@ -7,20 +7,26 @@ import uczelnia.Uczelnia;
 import java.io.Serializable;
 
 public class KonsultacjeStudent implements Serializable {
-    PracownikUczelni jakiWykladowca;
+    private static final long serialVersionUID = 1L;
+   public PracownikNaukowoDydaktyczny jakiWykladowca;
     int czasPotrzebnyMinimalny;
-    int getCzasPotrzebnyMaksymalny;
+    int CzasPotrzebnyMaksymalny;
     int priorytet; // określany jako 0-low, 1-normal, 2-high
 
-    public KonsultacjeStudent(){
+    public KonsultacjeStudent(Student student){
         System.out.println("Do jakiego prowadzącego? ");
-        jakiWykladowca = Main.uczelnia.szukajPracownika();
-        System.out.println("ile potrzeba czasu?(w minutach");
-        czasPotrzebnyMinimalny = Main.c.nextInt();
-        System.out.println("podaj priorytet");
-        priorytet  =  Main.c.nextInt();
+        if(!Main.uczelnia.szukajPracownika().equals(null)) {
+            jakiWykladowca = ((PracownikNaukowoDydaktyczny) Main.uczelnia.szukajPracownika());
+            System.out.println("ile potrzeba czasu?(w minutach");
+            czasPotrzebnyMinimalny = Main.c.nextInt();
+            System.out.println("podaj priorytet");
+            priorytet = Main.c.nextInt();
 
+            jakiWykladowca.getKonsultacje().zapisNaKonsultacje(student, jakiWykladowca);
+        }
 
     }
+
+
 
 }

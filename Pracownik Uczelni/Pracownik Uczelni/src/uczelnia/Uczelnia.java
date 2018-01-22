@@ -11,6 +11,7 @@ import osoby.PracownikNaukowoDydaktyczny;
 import osoby.PracownikUczelni;
 import osoby.Student;
 import pakietStartowy.Main;
+import zadania.BrakPracownikowException;
 import zadania.GeneratorOsob;
 
 public class Uczelnia {
@@ -315,16 +316,31 @@ public class Uczelnia {
 		try {
 			
 			ObjectOutputStream objectStream = new ObjectOutputStream(new FileOutputStream("pracownicy.ino"));
-
+            ObjectOutputStream objectStreamStudent = new ObjectOutputStream(new FileOutputStream("studenci.ino"));
+            objectStreamStudent.writeObject(student);
 			objectStream.writeObject(pracownik);
 			objectStream.close();
-			
+            objectStreamStudent.close();
 		} catch(Exception ex) { ex.printStackTrace(); }
 		
 	}
 	
 	//deserializacja danych
 	public void importuj() {
+
+
+        try {
+
+            ObjectInputStream objectStreamStudent = new ObjectInputStream(new FileInputStream("studenci.ino"));
+            student = (Student []) objectStreamStudent.readObject();
+            objectStreamStudent.close();
+            System.out.println("studenci zaimportowani");
+
+        } catch(FileNotFoundException fnfe) {
+
+            System.out.println("Brak pliku");
+
+        }catch(Exception ex) { ex.printStackTrace(); }
 
 		
 		try {
@@ -349,32 +365,37 @@ public class Uczelnia {
 	}
 
 
-	public void dodajStudenta(){
+	public void dodajStudenta() {
 
-        Student nowyStudent = new Student();
+		Student nowyStudent = null;
 
-        //Rozszeżanie tablicy studentów za pomocą tablicy pomocniczej
-        Student arrHolder[] = new Student[student.length + 1];
+			nowyStudent = new Student();
 
-        for(int i = 0; i < student.length; i++) {
 
-            arrHolder[i] = student[i];
+			//Rozszeżanie tablicy studentów za pomocą tablicy pomocniczej
+			Student arrHolder[] = new Student[student.length + 1];
 
-        }
+			for (int i = 0; i < student.length; i++) {
 
-        arrHolder[student.length] = nowyStudent;      //dopisanie nowego pracownika
-        student = arrHolder;                          //"przepisanie" tablicy
-        arrHolder = null;                               // wyzerowanie tablicy pomocniczej
+				arrHolder[i] = student[i];
 
-    }
+			}
+
+			arrHolder[student.length] = nowyStudent;      //dopisanie nowego studenta
+			student = arrHolder;                          //"przepisanie" tablicy
+			arrHolder = null;                               // wyzerowanie tablicy pomocniczej
+
+	}
 
 
     public void generujStudenta(){
 		GeneratorOsob generator = new GeneratorOsob();
-        generator.generujStudenta();
+
+			generator.generujStudenta();
 
 
-    }
+
+	}
 
     public void wyswietlStudenta(){
 		for(int j=0;j<student.length;j++){

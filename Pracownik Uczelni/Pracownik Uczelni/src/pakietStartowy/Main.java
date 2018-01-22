@@ -26,7 +26,9 @@ public class Main {
 			System.out.println("6.Zaimportuj pracowników z pliku");
 			System.out.println("7.Zapisz i zacznij od nowa");
 			System.out.println("8.dodaj studenta");
-			System.out.println("9.zakończ");
+			System.out.println("9. generuj studenta");
+            System.out.println("10.wyświetl studenta");
+            System.out.println("11.zakończ");
 			System.out.print("Twój wybór: ");
 			
 			String wyborString = c.next();
