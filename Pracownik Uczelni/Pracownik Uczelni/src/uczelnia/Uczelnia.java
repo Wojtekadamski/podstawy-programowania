@@ -17,7 +17,7 @@ public class Uczelnia {
 
 	public static PracownikUczelni pracownik[];
     public static Student student[];
-	
+
 	public Uczelnia() {
 
 		pracownik = new PracownikUczelni[0];
@@ -163,7 +163,7 @@ public class Uczelnia {
 				
 				String wybor;
 				System.out.print("czy wyświetlić dane pracownika?: tak/nie");
-				while(!(wybor=Main.c.nextLine()).equals("tak") && !wybor.equals("nie")) {
+				while(!(wybor=Main.c.next()).equals("tak") && !wybor.equals("nie")) {
 					
 					System.out.println(wybor);
 					System.out.println("błąd wprowadzania: ");
@@ -194,7 +194,7 @@ public class Uczelnia {
 
                 String wybor;
                 System.out.print("czy wyświetlić dane pracownika?: tak/nie");
-                while(!(wybor=Main.c.nextLine()).equals("tak") && !wybor.equals("nie")) {
+                while(!(wybor=Main.c.next()).equals("tak") && !wybor.equals("nie")) {
 
                     System.out.println(wybor);
                     System.out.println("błąd wprowadzania: ");
@@ -225,7 +225,7 @@ public class Uczelnia {
 
                 String wybor;
                 System.out.print("czy wyświetlić dane pracownika?: tak/nie");
-                while(!(wybor=Main.c.nextLine()).equals("tak") && !wybor.equals("nie")) {
+                while(!(wybor=Main.c.next()).equals("tak") && !wybor.equals("nie")) {
 
                     System.out.println(wybor);
                     System.out.println("błąd wprowadzania: ");
@@ -264,7 +264,7 @@ public class Uczelnia {
 
                 String wybor;
                 System.out.print("czy wyświetlić dane pracownika?: tak/nie");
-                while(!(wybor=Main.c.nextLine()).equals("tak") && !wybor.equals("nie")) {
+                while(!(wybor=Main.c.next()).equals("tak") && !wybor.equals("nie")) {
 
                     System.out.println(wybor);
                     System.out.println("błąd wprowadzania: ");
@@ -370,7 +370,8 @@ public class Uczelnia {
 
 
     public void generujStudenta(){
-        GeneratorOsob.generujStudenta();
+		GeneratorOsob generator = new GeneratorOsob();
+        generator.generujStudenta();
 
 
     }

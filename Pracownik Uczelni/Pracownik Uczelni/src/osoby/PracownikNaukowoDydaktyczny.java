@@ -20,7 +20,7 @@ public class PracownikNaukowoDydaktyczny extends PracownikUczelni implements Ser
 		konsultacje = new KonsultacjeProwadzacy();
 		
 	}
-	
 
-	
+
+
 }

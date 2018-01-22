@@ -20,7 +20,7 @@ public class Student extends Osoba implements Serializable {
 	public Student(){
         System.out.println("podaj numer indeksu");
         numerAlbumu= Main.c.next();
-
+        konsultacjeStudent = new KonsultacjeStudent();
     }
 
     public Student(String imie, String nazwisko ,int wiek, String pesel, String numerAlbumu){
@@ -31,7 +31,7 @@ public class Student extends Osoba implements Serializable {
     }
 
 
-	public static void dodajStudenta(){
+	public static void dodajStudenta(Student nowyStudent){
 
 	}
 	

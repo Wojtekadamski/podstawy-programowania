@@ -7,7 +7,6 @@ import uczelnia.Uczelnia;
 import java.io.Serializable;
 
 public class KonsultacjeStudent implements Serializable {
-    Uczelnia uczelnia1 = new Uczelnia();
     PracownikUczelni jakiWykladowca;
     int czasPotrzebnyMinimalny;
     int getCzasPotrzebnyMaksymalny;
@@ -15,7 +14,7 @@ public class KonsultacjeStudent implements Serializable {
 
     public KonsultacjeStudent(){
         System.out.println("Do jakiego prowadzącego? ");
-        jakiWykladowca = uczelnia1.szukajPracownika();
+        jakiWykladowca = Main.uczelnia.szukajPracownika();
         System.out.println("ile potrzeba czasu?(w minutach");
         czasPotrzebnyMinimalny = Main.c.nextInt();
         System.out.println("podaj priorytet");

@@ -4,12 +4,12 @@ import java.util.Scanner;
 import uczelnia.Uczelnia;
 
 public class Main {
-
+	public static Uczelnia uczelnia = new Uczelnia();
 	public static final Scanner c = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 
-		Uczelnia uczelnia = new Uczelnia();
+
 
 		
 		int wybor = 0;

@@ -1,6 +1,5 @@
 package zadania;
 
-import osoby.PracownikUczelni;
 import osoby.Student;
 import pakietStartowy.Main;
 
@@ -37,18 +36,13 @@ public class KonsultacjeProwadzacy implements Serializable {
 	    while (czyPoprawne == false){
             System.out.print("Kiedy są konsultacje (w formacie dzień hh mm)");
 
-            tempKonsultacje = Main.c.next();
+            tempKonsultacje = Main.c.nextLine();
             StringTokenizer st = new StringTokenizer(tempKonsultacje);
             liczbaTokenow = st.countTokens();
             if (liczbaTokenow == 3){
                 for (int i = 0; i < 3; i++) {
                     podzieloneWyrazy[i] = st.nextToken();
-
-
                 }
-
-
-
                 czyPoprawne = true;
             }
 
@@ -73,29 +67,18 @@ public class KonsultacjeProwadzacy implements Serializable {
                     System.out.println("zakres minut to [0,59]");
                     czyPoprawne = false;
                 }
-
             }
-
-
-
-
         }
-
         day = podzieloneWyrazy[0];
         hour = Integer.parseInt(godzina);
         minute = Integer.parseInt(minuta);
-
-
-
-
-
     }
 	
 	public boolean zapisNaKonsultacje(Student nowyStudent) {
 
         if (studentsSignedUp.length <= 30) {
 
-            Student.dodajStudenta();
+            Student.dodajStudenta(nowyStudent);
             return true;
 
         } else {
