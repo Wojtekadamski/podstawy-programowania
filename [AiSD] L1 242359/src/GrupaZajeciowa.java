@@ -1,103 +1,10 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+import java.nio.file.*;
 
 public class GrupaZajeciowa {
     public static Student student[];
-/**
-    public GrupaZajeciowa() {
 
-        student = new Student[0];
-
-    }
-
-
-    public void dodajStudenta() {
-
-        Student nowyStudent = null;
-
-        nowyStudent = new Student();
-
-
-        //Rozszeżanie tablicy studentów za pomocą tablicy pomocniczej
-        Student arrHolder[] = new Student[student.length + 1];
-
-        for (int i = 0; i < student.length; i++) {
-
-            arrHolder[i] = student[i];
-
-        }
-
-        arrHolder[student.length] = nowyStudent;      //dopisanie nowego studenta
-        student = arrHolder;                          //"przepisanie" tablicy
-        arrHolder = null;                               // wyzerowanie tablicy pomocniczej
-
-    }
-
-
-    public void usunStudenta() {
-
-        if(0 < student.length) {
-            System.out.print("podaj imie: ");
-            String name = Main.c.next();
-            System.out.print("Podaj nazwisko: ");
-            String surname = Main.c.next();
-
-            for(int i = 0; i < student.length; i++) {
-
-                if(student[i].getImie().equals(name) && student[i].getNazwisko().equals(surname)) {
-
-                    if(0 < student.length) {
-
-                        Student arrHolder[] = new Student[student.length - 1];
-
-                        for(int j = 0; j < student.length; j++) {
-
-                            if(j < i) {
-
-                                arrHolder[j] = student[j];
-
-                            } else if( i < j) {
-
-                                arrHolder[j - 1] = student[j];
-
-                            }
-
-                        }
-
-                        student = arrHolder;
-                        arrHolder = null;
-
-                        System.out.println("Student usunięty");
-
-                    }
-
-                }
-
-            }
-        } else {
-
-            System.out.println("Nie masz żadnych studentów");
-
-        }
-
-    }
-
-
-
-
-  public double sredniaDlaGrupy(){
-        double suma = 0;
-        for(int i = 0;i<=student.length;i++){
-            suma+=student[i].getOcena();
-        }
-
-    return suma;}
-*/
 
 
 private ArrayList<Student> array;
@@ -110,13 +17,13 @@ private ArrayList<Student> array;
         Student s = new Student();
         array.add(s);
     }
-
+/*
     public void zapisz() {
         try {
             PrintWriter zapisz = new PrintWriter(new File("studenci.txt"));
             zapisz.println(array.size());
             for (Student student : array) {
-                zapisz.println(student);
+                zapisz.toString(student);
             }
             zapisz.close();
         } catch (FileNotFoundException e) {
@@ -143,6 +50,60 @@ private ArrayList<Student> array;
         }
 
     }
+*/
+
+
+public void wczytaj(){
+    Scanner odczyt = null;
+    Student student1;
+    String[] temp = new String[10];
+    try {
+        odczyt = new Scanner(new FileReader("studenci.csv"));
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    }
+    StringTokenizer studentToken;
+    while(odczyt.hasNextLine()){
+        studentToken = new StringTokenizer(odczyt.nextLine(),",");
+
+        for(int i= 0; i<10; i++)
+            temp[i]= (String) studentToken.nextToken();
+
+        student1 = new Student(temp[0], temp[1], temp[2], Integer.parseInt(temp[3]), Integer.parseInt(temp[4]), Integer.parseInt(temp[5]), Integer.parseInt(temp[6]), Integer.parseInt(temp[7]), Integer.parseInt(temp[8]), Integer.parseInt(temp[9]));
+        array.add(student1);
+    }
+}
+
+
+    public  void zapiszPlik() {
+
+
+        Path sciezka = Paths.get("studenci.txt");
+        ArrayList<String> out = new ArrayList<>();
+        Iterator<Student> iterator = array.iterator();
+
+
+        try {
+        while (iterator.hasNext()) {
+            String s = iterator.next().toString();
+
+            s = s.replace("[", "");
+            s = s.replace("]", "");
+            s = s.replace(" ", ",");
+
+            // dodanie linijki z danymi do listy
+            out.add(s);
+
+
+
+            Files.write(sciezka, out);
+        }
+    } catch (IOException ex) {
+            System.out.println("Nie mogę zapisać pliku!");
+        }
+    }
+
+
 
     public void srednia() {
         double srednia = 0;
@@ -184,9 +145,11 @@ private ArrayList<Student> array;
         Iterator<Student> it = array.iterator();
         System.out.println();
         while (it.hasNext()) {
-            System.out.println(it.next());
+            System.out.println(it.next().getImie() +" "+ it.next().getNazwisko() +" "+ it.next().getNrIndeksu() +" "+ it.next().getOcena() );
         }
         System.out.println();
     }
+
+
 
 }
