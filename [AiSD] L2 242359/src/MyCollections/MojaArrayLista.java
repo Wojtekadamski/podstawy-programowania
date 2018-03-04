@@ -1,7 +1,7 @@
+package MyCollections;
+
 import java.util.Arrays;
 import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 public class MojaArrayLista<T> implements Iterable<T>{
 
@@ -30,7 +30,7 @@ public class MojaArrayLista<T> implements Iterable<T>{
         myStore[actSize++] = obj;
     }
 
-    public void add(T[] collection){
+    public void addAll(T[] collection){
         for(T elements: collection){
             add(elements);
         }

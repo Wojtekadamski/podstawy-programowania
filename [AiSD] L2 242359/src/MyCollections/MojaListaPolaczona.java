@@ -1,3 +1,5 @@
+package MyCollections;
+
 import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
@@ -6,7 +8,7 @@ import java.util.function.Consumer;
 
 
 
-    class MojaListaPolaczona<T> implements Iterable {
+public class MojaListaPolaczona<T> implements Iterable {
         protected Node start;
         protected Node end ;
         public int size;
@@ -116,6 +118,16 @@ import java.util.function.Consumer;
             }
             size++;
         }
+
+
+        public void addEndAll(T[] collection){
+
+            for(T element: collection)
+                addEnd(element);
+
+        }
+
+
         /* Function to insert element at position */
         public void addAtPos(T val , int pos)
         {
@@ -140,6 +152,17 @@ import java.util.function.Consumer;
             }
             size++ ;
         }
+
+        public void addAtPosAll(T[] collection, int index){
+            for (T element: collection){
+                addAtPos(element, index);
+                index++;
+            }
+
+
+
+        }
+
         /* Function to delete node at position */
         public void deleteAtPos(int pos)
         {
@@ -182,10 +205,10 @@ import java.util.function.Consumer;
         /* Function to display status of list */
         public void display()
         {
-            System.out.print("\nDoubly Linked List = ");
+
             if (size == 0)
             {
-                System.out.print("empty\n");
+                System.out.print("puste\n");
                 return;
             }
             if (start.getLinkNext() == null)
@@ -231,18 +254,55 @@ import java.util.function.Consumer;
 
 
         @Override
-        public Iterator iterator() {
-            return null;
-        }
+        public Iterator<T> iterator() {
+            Iterator<T> it = new Iterator<T>() {
 
-        @Override
-        public void forEach(Consumer action) {
+                private int currentIndex = 0;
 
-        }
+                Node iter = start;
 
-        @Override
-        public Spliterator spliterator() {
-            return null;
+                @Override
+                public boolean hasNext() {
+                    try {
+                        return iter.next != null;
+                    }
+                    catch (NullPointerException npe){
+                        return false;
+                    }
+                }
+
+                @Override
+                public T next() {
+
+                    Node temp = iter;
+                    iter = iter.next;
+                    return (T) temp.data;
+                }
+
+                public T previous(){
+                    Node temp = iter;
+                    iter = iter.prev;
+                    return (T) temp.data;
+                }
+
+                @Override
+                public void remove() {
+                    throw new UnsupportedOperationException();
+                }
+
+                public void first(){
+                   iter = start;
+                }
+
+                public void last(){
+                    iter = end;
+                }
+
+                public T current(){
+                    return (T) iter;
+                }
+            };
+            return it;
         }
     }
 

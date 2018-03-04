@@ -1,8 +1,12 @@
+import MyCollections.MojaArrayLista;
+import MyCollections.MojaListaPolaczona;
+
 import java.util.Iterator;
 import java.util.Scanner;
+import MyCollections.*;
 
 public class Main {
-
+    public static Scanner c=new Scanner(System.in);
 
     public static void main(String[] args){
         String string;
@@ -10,12 +14,9 @@ public class Main {
         Double _double;
 
 
-        MojaArrayLista<Integer> tablica = new MojaArrayLista<>(10);
-        Iterator<Integer> iterator = tablica.iterator();
-        Scanner c = new Scanner(System.in);
 
 
-
+/*
 
         System.out.println("rozmiar tablicy: " + tablica.length());
         System.out.println("wpisz 5 wartości potwierdzając enterem");
@@ -29,11 +30,11 @@ public class Main {
             System.out.println(iterator.next());
         }
         System.out.println("index elementu 3");
-        System.out.println(tablica.indexOf(7));
+        System.out.println(tablica.indexOf(7));*/
 
 
-        /*MojaListaPolaczona<Integer> lista = new MojaListaPolaczona<>();
-        System.out.println(lista.isEmpty());
+
+        /*System.out.println(lista.isEmpty());
         System.out.println("wpisz 5 wartości potwierdzając enterem");
         for (int i = 0; i<5;i++) {
             integer = c.nextInt();
@@ -42,9 +43,53 @@ public class Main {
         System.out.println(lista.isEmpty());
         lista.iterateForward();
         lista.display();
-*/
+
+        Integer[] tab = {22,33,44,55,66,77};
+        lista.addAtPosAll(tab, 3);
 
 
+        lista.display();*/
+
+
+
+        GrupaZajeciowa grupaZajeciowa = new GrupaZajeciowa();
+        int wybor=0;
+
+
+
+        while(wybor !=10){
+            System.out.println("co chcesz zrobić?");
+            System.out.println("1 wczytaj dane");
+            System.out.println("2 dodaj");
+            System.out.println("3 oblicz średnią dla grupy");
+            System.out.println("4 wyświetl wszystkich");
+            System.out.println("5 zapisz plik");
+            System.out.println("8 iteruj po arrayliście");
+            System.out.println("9 iteruj po linkedliście");
+            System.out.println("10 zakończ");
+            wybor= c.nextInt();
+            switch (wybor){
+                case 1:
+                    grupaZajeciowa.wczytaj();
+                    break;
+                case 2:
+                    grupaZajeciowa.add();
+                    break;
+                case 3:
+                    grupaZajeciowa.srednia();
+                    break;
+                case 4:
+                    grupaZajeciowa.wyswietl();
+                    break;
+                case 5:
+                    grupaZajeciowa.zapiszPlik();
+                    break;
+                case 6:
+
+
+
+            }
+        }
 
 
     }
