@@ -64,8 +64,6 @@ public class Main {
             System.out.println("3 oblicz średnią dla grupy");
             System.out.println("4 wyświetl wszystkich");
             System.out.println("5 zapisz plik");
-            System.out.println("8 iteruj po arrayliście");
-            System.out.println("9 iteruj po linkedliście");
             System.out.println("10 zakończ");
             wybor= c.nextInt();
             switch (wybor){
@@ -84,7 +82,8 @@ public class Main {
                 case 5:
                     grupaZajeciowa.zapiszPlik();
                     break;
-                case 6:
+                default:
+                    break;
 
 
 

@@ -4,10 +4,6 @@ import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-/*  Class Node  */
-
-
-
 public class MojaListaPolaczona<T> implements Iterable {
         protected Node start;
         protected Node end ;
@@ -20,46 +16,46 @@ public class MojaListaPolaczona<T> implements Iterable {
             protected T data;
             protected Node next, prev;
 
-            /* Constructor */
+
             public Node()
             {
                 next = null;
                 prev = null;
                 data = null;
             }
-            /* Constructor */
+
             public Node(T data, Node next, Node prev)
             {
                 this.data = data;
                 this.next = next;
                 this.prev = prev;
             }
-            /* Function to set link to next node */
+
             public void setLinkNext(Node n)
             {
                 next = n;
             }
-            /* Function to set link to previous node */
+
             public void setLinkPrev(Node p)
             {
                 prev = p;
             }
-            /* Funtion to get link to next node */
+
             public Node getLinkNext()
             {
                 return next;
             }
-            /* Function to get link to previous node */
+
             public Node getLinkPrev()
             {
                 return prev;
             }
-            /* Function to set data to node */
+
             public void setData(T d)
             {
                 data = d;
             }
-            /* Function to get data from node */
+
             public T getData()
             {
                 return data;
@@ -74,17 +70,17 @@ public class MojaListaPolaczona<T> implements Iterable {
             end = null;
             size = 0;
         }
-        /* Function to check if list is empty */
+
         public boolean isEmpty()
         {
             return start == null;
         }
-        /* Function to get size of list */
+
         public int getSize()
         {
             return size;
         }
-        /* Function to insert element at begining */
+
         public void addStart(T val)
         {
             Node nptr = new Node(val, null, null);
@@ -101,7 +97,7 @@ public class MojaListaPolaczona<T> implements Iterable {
             }
             size++;
         }
-        /* Function to insert element at end */
+
         public void addEnd(T val)
         {
             Node node = new Node(val, null, null);
@@ -127,8 +123,6 @@ public class MojaListaPolaczona<T> implements Iterable {
 
         }
 
-
-        /* Function to insert element at position */
         public void addAtPos(T val , int pos)
         {
             Node node = new Node(val, null, null);
@@ -163,7 +157,6 @@ public class MojaListaPolaczona<T> implements Iterable {
 
         }
 
-        /* Function to delete node at position */
         public void deleteAtPos(int pos)
         {
             if (pos == 1)
@@ -202,13 +195,12 @@ public class MojaListaPolaczona<T> implements Iterable {
                 ptr = ptr.getLinkNext();
             }
         }
-        /* Function to display status of list */
         public void display()
         {
 
             if (size == 0)
             {
-                System.out.print("puste\n");
+                System.out.print("puste");
                 return;
             }
             if (start.getLinkNext() == null)
@@ -217,20 +209,19 @@ public class MojaListaPolaczona<T> implements Iterable {
                 return;
             }
             Node ptr = start;
-            System.out.print(start.getData()+ " <-> ");
+            System.out.print(start.getData()+ " - ");
             ptr = start.getLinkNext();
             while (ptr.getLinkNext() != null)
             {
-                System.out.print(ptr.getData()+ " <-> ");
+                System.out.print(ptr.getData()+ " - ");
                 ptr = ptr.getLinkNext();
             }
-            System.out.print(ptr.getData()+ "\n");
+            System.out.print(ptr.getData()+ "   ");
         }
 
 
         public void iterateForward(){
 
-            System.out.println("iterating forward..");
             Node tmp = start;
             while(tmp != null){
                 System.out.println(tmp.data);
@@ -238,12 +229,8 @@ public class MojaListaPolaczona<T> implements Iterable {
             }
         }
 
-        /**
-         * this method walks backward through the linked list
-         */
-        public void iterateBackward(){
 
-            System.out.println("iterating backword..");
+        public void iterateBackward(){
             Node tmp = end;
             while(tmp != null){
                 System.out.println(tmp.data);
@@ -256,8 +243,6 @@ public class MojaListaPolaczona<T> implements Iterable {
         @Override
         public Iterator<T> iterator() {
             Iterator<T> it = new Iterator<T>() {
-
-                private int currentIndex = 0;
 
                 Node iter = start;
 
@@ -305,7 +290,3 @@ public class MojaListaPolaczona<T> implements Iterable {
             return it;
         }
     }
-
-
-
-

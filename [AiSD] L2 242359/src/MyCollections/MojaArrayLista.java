@@ -62,7 +62,6 @@ public class MojaArrayLista<T> implements Iterable<T>{
 
     private void increaseListSize(){
         myStore = Arrays.copyOf(myStore, myStore.length*2);
-        System.out.println("\nNew length: "+myStore.length);
     }
 
 
